@@ -1,16 +1,16 @@
 import React, {useEffect, useState} from 'react';
 import "../style/LandingPage.css";
+import axios from 'axios';
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
 import SemicolonLogo from "../../../assets/images/SemicolonLogo.svg";
 import YourRoleImage from "../../../assets/images/YourRoleImage.svg";
-import 'react-phone-input-2/lib/style.css';
-import PhoneInput from 'react-phone-input-2';
 import SeamlessCommunication from "../../../assets/images/SeamlessCommunication.svg";
 import CollaborationOpportunities from "../../../assets/images/CollaborationOpportunities.svg";
 import PersonalizedExperience from "../../../assets/images/PersonalizedExperience.svg";
 import SemicolonImage1 from "../../../assets/images/Semicolon Image 1.jpg";
 import SemicolonImage2 from "../../../assets/images/Semicolon Image 2.jpg";
 import SemicolonImage3 from "../../../assets/images/Semicolon Image 3.jpg";
-import axios from 'axios';
 
 function LandingPage() {
     const [fullName, setFullName] = useState('');
