@@ -10,7 +10,6 @@ import PersonalizedExperience from "../../../assets/images/PersonalizedExperienc
 import SemicolonImage1 from "../../../assets/images/Semicolon Image 1.jpg";
 import SemicolonImage2 from "../../../assets/images/Semicolon Image 2.jpg";
 import SemicolonImage3 from "../../../assets/images/Semicolon Image 3.jpg";
-import SuccessIcon from "../../../assets/images/SuccessfulRegistration.svg";
 import axios from 'axios';
 
 function LandingPage() {
@@ -23,17 +22,14 @@ function LandingPage() {
     const [employmentStatus, setEmploymentStatus] = useState('');
     const [proficientLanguages, setProficientLanguages] = useState('');
     const [currentImage, setCurrentImage] = useState(0);
-    const [modal, setModal] = useState(false);
+    const [submitted, setSubmitted] = useState(false);
+    const [allFieldsFilled, setAllFieldsFilled] = useState(false);
 
-    const toggleModal = () => {
-        setModal(!modal);
-    };
-
-    if(modal) {
-        document.body.classList.add('active-modal')
-    } else {
-        document.body.classList.remove('active-modal')
-    }
+    useEffect(() => {
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const areAllFieldsFilled = !!fullName && !!email && !emailPattern.test(email) && !!phoneNumber && !!stack && cohort !== '0' && !!ancestorOrNative && !!employmentStatus && !!proficientLanguages;
+        setAllFieldsFilled(areAllFieldsFilled);
+    }, [fullName, email, phoneNumber, stack, cohort, ancestorOrNative, employmentStatus, proficientLanguages]);
 
     const handleFullNameChange = (event) => {
         setFullName(event.target.value);
@@ -69,18 +65,6 @@ function LandingPage() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log('Testing 1 2 3');
-
-        console.log('Form data:', {
-            fullName,
-            email,
-            phoneNumber,
-            stack,
-            cohort,
-            ancestorOrNative,
-            employmentStatus,
-            proficientLanguages
-        });
 
         const data = {
             fullName,
@@ -96,7 +80,7 @@ function LandingPage() {
         axios.post("https://semicolonnetwork.onrender.com/join", data)
             .then(response => {
                 console.log('Response:', response);
-                if (response.status === 200) {
+                if (response.status === 201) {
                     console.log("Registration successful");
                 } else {
                     console.log("Registration failed");
@@ -105,6 +89,8 @@ function LandingPage() {
             .catch(error => {
                 console.log("An error occurred:", error);
             });
+
+        setSubmitted(true);
     };
 
     const scrollToSection = (id) => {
@@ -187,11 +173,10 @@ function LandingPage() {
                 <h2 className="join-the-team-header">Join The Team</h2>
                 <form className="registration-form" onSubmit={(event) => {
                     handleSubmit(event);
-                    toggleModal();
-                }}>
+                    }}>
                     <div>
-                        <input placeholder="Full Name                                                     👤" type="text" id="fullName" value={fullName} onChange={handleFullNameChange}/>
-                        <input placeholder="Email Address                                               ✉" type="email" id="email" value={email} onChange={handleEmailChange}/>
+                        <input placeholder="Full Name                                                     👤" type="text" id="fullName" value={fullName} onChange={handleFullNameChange} autoComplete="new-password"/>
+                        <input placeholder="Email Address                                               ✉" type="email" id="email" value={email} onChange={handleEmailChange} autoComplete="new-password"/>
                     </div>
                     <div>
                         <PhoneInput country={'ng'} value={phoneNumber} onChange={handlePhoneChange} style={{ marginLeft: '20px', marginTop: '10px', marginBottom: '20px' }}/>
@@ -204,8 +189,8 @@ function LandingPage() {
                         </select>
                     </div>
                     <div>
-                        <input placeholder="Cohort" type="number" id="cohort" value={cohort} onChange={handleCohortChange}/>
-                        <input placeholder="Proficient Language(s)" type="text" id="proficientLanguages" value={proficientLanguages} onChange={handleProficientLanguagesChange}/>
+                        <input placeholder="Cohort" type="number" id="cohort" value={cohort} onChange={handleCohortChange} autoComplete="new-password"/>
+                        <input placeholder="Proficient Language(s)" type="text" id="proficientLanguages" value={proficientLanguages} onChange={handleProficientLanguagesChange} autoComplete="new-password"/>
                     </div>
                     <div>
                         <select id="ancestorOrNative" value={ancestorOrNative} onChange={handleAncestorOrNativeChange}>
@@ -219,21 +204,15 @@ function LandingPage() {
                             <option value="Unemployed">Unemployed</option>
                         </select>
                     </div>
-                    <button className="join-the-team-submit-button" type="submit" onClick={handleSubmit}>Submit</button>
+                    {submitted ? (
+                        <button className="join-the-team-submit-button" disabled style={{ backgroundColor: 'lightgreen', fontSize: '20px', width: '300px', height: '100px', padding: '20px 20px 20px 20px' }}>
+                            Thank you, we will get back to you shortly!
+                        </button>
+                    ) : (
+                        <button className="join-the-team-submit-button" type="submit" disabled={!allFieldsFilled}>Submit</button>
+                    )}
                 </form>
             </div>
-            {modal && (
-                <div className="modal">
-                    <div onClick={toggleModal} className="overlay"></div>
-                    <div className="modal-content">
-                        <p>Successful!</p>
-                        <img src={SuccessIcon} alt="Success" className="success-icon"/>
-                        <p>Thank you for registering.</p>
-                        <p>You will get a response soon.</p>
-                        <button className="close-modal" onClick={toggleModal}>Exit</button>
-                    </div>
-                </div>
-            )}
         </div>
     );
 }
