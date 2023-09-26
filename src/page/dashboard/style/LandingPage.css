@@ -103,12 +103,9 @@
         padding-right: 0.4rem;
         font-size: 0.6rem;
       }
-
 }
 
-
 @media (min-width: 321px) and (max-width: 480px ) {
-
     .header{
         padding-left: 0.4rem;
         padding-right: 0.1rem;
@@ -136,10 +133,7 @@
     padding-right: 0.4rem;
     font-size: 0.8rem;
   }
-
 }
-
-
 
 @media (min-width: 481px) and (max-width: 768px ) {
     .header{
@@ -161,7 +155,6 @@
   }
 }
 
-
 @media (min-width: 769px) and (max-width: 1024px ) {
     .header{
         padding-left: 0.4rem;
@@ -182,10 +175,6 @@
   }
 }
 
-
-
-
-
 .semicolon-community {
     position: relative;
     margin: 3.6rem 8rem 0 8rem;
@@ -193,7 +182,6 @@
 
 .image-scroll-container{
     background: rgba(0,0,0,0.6)url(../../../assets/images/semicolon-image3.jpg);
-    /* background: rgba(0,0,0,0.6)url(../../../assets/images/background-img.jpg); */
     border: 1px solid grey;
     background-blend-mode: darken;
     background-size: cover;
