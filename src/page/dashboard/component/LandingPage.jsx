@@ -203,7 +203,6 @@ function LandingPage() {
                     )}
                 </form>
             </div>
-
             <footer>
                 <div>
                     <h3 className='business'> The Team</h3>

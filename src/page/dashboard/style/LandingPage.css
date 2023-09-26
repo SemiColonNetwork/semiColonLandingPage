@@ -30,7 +30,7 @@
     margin-left: 3.3rem;
 }
 
-.header-left img{
+.header-left img {
     width: 100%;
 }
 
@@ -71,32 +71,36 @@
     font-weight: bold;
 }
 
-
-@media (min-width: 280px) and (max-width: 320px){
-    .header{
+@media (min-width: 280px) and (max-width: 320px) {
+    .header {
         padding-left: 0.2rem;
         padding-right: 0.1rem;
     }
-    .header-left{
+
+    .header-left {
         width: 4rem;
         margin-left: 0.1rem;
     }
-    .semicolon{
+
+    .semicolon {
         height: 2rem;
     }
-    .join-the-team-button{
+
+    .join-the-team-button {
         background-color: white;
         color: red;
         padding-right: 0.4rem;
         padding-left: 0.4rem;
         font-size: 0.6rem;
     }
+
     .vision-button,
     .why-it-matters-button,
-    .your-role-button{
+    .your-role-button {
       display: none;
     }
-    .join-the-team-button{
+
+    .join-the-team-button {
         background-color: white;
         color: red;
         margin-right: 0.1rem;
@@ -106,27 +110,27 @@
 }
 
 @media (min-width: 321px) and (max-width: 480px ) {
-    .header{
+    .header {
         padding-left: 0.4rem;
         padding-right: 0.1rem;
     }
 
-    .header-left{
+    .header-left {
         width: 6rem;
         margin-left: 0.5rem;
     }
 
-    .semicolon{
+    .semicolon {
         fill: black;
     }
 
   .vision-button,
   .why-it-matters-button,
-  .your-role-button{
+  .your-role-button {
     display: none;
   }
 
-  .join-the-team-button{
+  .join-the-team-button {
     background-color: white;
     color: red;
     margin-right: 0.1rem;
@@ -136,17 +140,17 @@
 }
 
 @media (min-width: 481px) and (max-width: 768px ) {
-    .header{
+    .header {
         padding-left: 0.4rem;
         padding-right: 0.1rem;
     }
 
-    .header-left{
+    .header-left {
         width: 6rem;
         margin-left: 0.5rem;
     }
 
-  .join-the-team-button{
+  .join-the-team-button {
     background-color: red;
     color: white;
     margin-right: 0.5rem;
@@ -156,17 +160,17 @@
 }
 
 @media (min-width: 769px) and (max-width: 1024px ) {
-    .header{
+    .header {
         padding-left: 0.4rem;
         padding-right: 0.1rem;
     }
 
-    .header-left{
+    .header-left {
         width: 6rem;
         margin-left: 0.5rem;
     }
 
-  .join-the-team-button{
+  .join-the-team-button {
     background-color: red;
     color: white;
     margin-right: 0.5rem;
@@ -180,7 +184,7 @@
     margin: 3.6rem 8rem 0 8rem;
 }
 
-.image-scroll-container{
+.image-scroll-container {
     background: rgba(0,0,0,0.6)url(../../../assets/images/semicolon-image3.jpg);
     border: 1px solid grey;
     background-blend-mode: darken;
@@ -195,11 +199,11 @@
     color: white;
 }
 
-.community-text{
+.community-text {
     width: 32rem;
 }
 
-.join-the-team-community-button{
+.join-the-team-community-button {
     font-weight: bold;
 }
 
@@ -225,7 +229,7 @@
     text-align: left;
 }
 
-.content{
+.content {
     top: 290px;
     font-size: 16px;
 }
@@ -263,7 +267,7 @@
 }
 
 @media (min-width: 280px ) and (max-width: 389px ) {
-    .semicolon-community{
+    .semicolon-community {
         margin: 0.5rem 0 1rem 0;
     }
 
@@ -286,7 +290,7 @@
         width: 19rem;
     }
 
-    .content{
+    .content {
         top: 300px;
         font-size: 11px;
     }
@@ -302,15 +306,14 @@
         margin-top: 1rem;
     }
 
-    .image-scroll-container{
+    .image-scroll-container {
         background: rgba(0,0,0,0.6)url(../../../assets/images/mobile-background.jpg);
         background-size:cover;
     }
 }
 
-
 @media (min-width: 390px) and (max-width: 480px ) {
-    .semicolon-community{
+    .semicolon-community {
         margin: 0.5rem 0 1rem
     }
 
@@ -333,7 +336,7 @@
         width: 19rem;
     }
 
-    .content{
+    .content {
         top: 300px;
         font-size: 11px;
     }
@@ -354,14 +357,14 @@
         box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
     }
 
-    .image-scroll-container{
+    .image-scroll-container {
         background: rgba(0,0,0,0.6)url(../../../assets/images/mobile-background.jpg);
         background-size:cover;
     }
 }
 
 @media (min-width: 481px ) and (max-width: 767px ) {
-    .semicolon-community{
+    .semicolon-community {
         margin: 0.5rem 0 1rem 0;
     }
 
@@ -404,9 +407,8 @@
     }
 }
 
-
-@media (min-width: 280px) and (max-width: 320px){
-    .image-scroll-container{
+@media (min-width: 280px) and (max-width: 320px) {
+    .image-scroll-container {
         background-size:cover;
         height: 30rem;
     }
@@ -428,10 +430,12 @@
         padding: 0.2rem;
         margin: 1rem;
     }
-    .content{
+
+    .content {
         top: 300px;
         font-size: 11px;
     }
+
     .join-the-team-community-button {
         width: 100px;
         height: 30px;
@@ -441,13 +445,10 @@
         text-align: center;
         padding-left: 0.6rem;
     }
-
 }
 
-
-
 @media (min-width: 768px ) and (max-width: 1024px) {
-    .semicolon-community{
+    .semicolon-community {
         margin: 0.5rem 0 1rem 0;
     }
 
@@ -466,7 +467,8 @@
         text-align: center;
         margin-left: 6.5rem;
     }
-    .content{
+
+    .content {
         top: 300px;
         font-size: 11px;
     }
@@ -481,9 +483,6 @@
         padding-bottom: 0.6rem;
     }
 }
-
-
-
 
 .what-we-envision {
     display: flex;
@@ -514,7 +513,6 @@
 
 .what-we-envision-container {
     box-shadow: 0 4px 4px 0 #00000040;
-    /* border: 1px solid #02012AD9; */
     width: 250px;
     height: 349px;
     top: 957px;
@@ -526,7 +524,6 @@
 
 .what-we-envision-red-container {
     color: white;
-    /* border: 1px solid #000000; */
     background: linear-gradient(0deg, #FF2E2E, #FF2E2E);
     box-shadow: 0 4px 4px 0 #00000040;
     width: 250px;
@@ -570,7 +567,7 @@
 }
 
 @media screen and (max-width: 426px ) {
-    .what-we-envision-header{
+    .what-we-envision-header {
         font-size: 24px;
         margin-bottom: 24px;
     }
@@ -579,21 +576,21 @@
         margin-left: 5rem;
     }
 
-    .what-we-envision-container{
+    .what-we-envision-container {
         margin-bottom: 2rem;
     }
 
-    .what-we-envision-red-container{
+    .what-we-envision-red-container {
         margin-bottom: 2rem;
     }
 }
 
-
-@media (min-width: 280px) and (max-width: 320px){
-    .what-we-envision-header{
+@media (min-width: 280px) and (max-width: 320px) {
+    .what-we-envision-header {
         font-size: 14px;
         margin-bottom: 14px;
     }
+
     .what-we-envision-containers {
         margin-left: 36px;
     }
@@ -604,6 +601,7 @@
         margin-right: 40px;
         padding: 1.5rem;
     }
+
     .what-we-envision-red-container {
         width: 220px;
         height: 300px;
@@ -616,6 +614,7 @@
         line-height: 20px;
         text-align: left;
     }
+
     .what-we-envision-image {
         width: 2.5rem;
         margin-left: 120px;
@@ -640,18 +639,20 @@
     }
 }
 
-@media (min-width: 321px) and (max-width: 480px){
-    .join-the-team-button{
+@media (min-width: 321px) and (max-width: 480px) {
+    .join-the-team-button {
         background-color: white;
         color: red;
         padding-right: 0.4rem;
         padding-left: 0.4rem;
         font-size: 0.6rem;
     }
-    .what-we-envision-header{
+
+    .what-we-envision-header {
         font-size: 14px;
         margin-bottom: 14px;
     }
+
     .what-we-envision-containers {
         margin-left: 46px;
     }
@@ -700,18 +701,20 @@
 }
 
 @media (min-width: 481px) and (max-width: 768px ) {
-    .join-the-team-button{
+    .join-the-team-button {
         background-color: white;
         color: red;
         padding-right: 0.4rem;
         padding-left: 0.4rem;
         font-size: 0.6rem;
     }
-    .what-we-envision-header{
+
+    .what-we-envision-header {
         font-size: 18px;
         margin-left: 2rem;
         margin-bottom: 24px;
     }
+
     .what-we-envision-containers {
         margin-left: 86px;
     }
@@ -766,11 +769,11 @@
         margin-bottom: 2rem;
         padding: 1.5rem;
     }
+
     .what-we-envision-red-container {
         margin-bottom: 2rem;
         padding: 1.5rem;
     }
-
 }
 
 .why-it-matters {
@@ -791,7 +794,6 @@
     margin-bottom: 50px;
 }
 
-
 .why-it-matters-text {
     font-family: Poppins, sans-serif;
     font-size: 18px;
@@ -804,13 +806,14 @@
 }
 
 @media (min-width: 250px) and (max-width: 480px ) {
-    .why-it-matters-header{
+    .why-it-matters-header {
         font-size: 16px;
         margin-bottom: 15px;
         margin-left: 15px;
         text-align: center;
     }
-    .why-it-matters-text{
+
+    .why-it-matters-text {
         text-align: center;
         padding: 1rem 1rem;
         font-size: 12px;
@@ -819,13 +822,14 @@
 }
 
 @media (min-width: 481px) and (max-width: 768px ) {
-    .why-it-matters-header{
+    .why-it-matters-header {
         font-size: 18px;
         margin-bottom: 15px;
         margin-left: 15px;
         text-align: center;
     }
-    .why-it-matters-text{
+
+    .why-it-matters-text {
         text-align: center;
         padding: 1rem 1rem;
         font-size: 12px;
@@ -834,23 +838,20 @@
 }
 
 @media (min-width: 769px) and (max-width: 1024px ) {
-    .why-it-matters-header{
+    .why-it-matters-header {
         font-size: 24px;
         margin-bottom: 15px;
         margin-left: 15px;
         text-align: center;
     }
-    .why-it-matters-text{
+
+    .why-it-matters-text {
         text-align: center;
         padding: 1rem 1rem;
         font-size: 16px;
         line-height: 24px;
-        padding: 0 8rem;
     }
 }
-
-
-
 
 .your-role {
     display: flex;
@@ -858,8 +859,6 @@
     padding: 5rem 15rem;
     flex-wrap: wrap;
 }
-
-
 
 .your-role-left {
     display: flex;
@@ -913,124 +912,132 @@
     height: 25rem;
 }
 
-.img-header{
+.img-header {
     display: none;
 }
 
 @media (min-width: 280px) and (max-width: 480px ) {
-    .your-role-header{
+    .your-role-header {
         text-align: center;
         font-size: 3rem;
     }
-    .your-role{
+
+    .your-role {
         padding:2rem 5rem 2rem 5rem;
     }
 
-    .your-role-text{
+    .your-role-text {
         text-align: center;
         margin-top: 0.5rem;
         padding: 0.2rem;
         font-size: 12px;
     }
 
-    .your-role-register-text{
+    .your-role-register-text {
         text-align: center;
         margin-top: 0.5rem;
         font-size: 14px;
     }
 
-    .your-role-right{
+    .your-role-right {
         display: none;
     }
-    .your-role-join-the-team-button{
+
+    .your-role-join-the-team-button {
      display: none;
     }
-
 }
 
 @media (min-width: 481px) and (max-width: 768px ) {
-    .your-role-header{
+    .your-role-header {
         font-size: 20px;
         margin-bottom: 15px;
         margin-left: 15px;
         text-align: center;
     }
-    .your-role-text{
+
+    .your-role-text {
         text-align: center;
         padding: 1rem 1rem;
         font-size: 16px;
         line-height: 20px;
     }
 
-    .your-role-register-text{
+    .your-role-register-text {
         text-align: center;
         margin-top: 0.5rem;
         font-size: 14px;
     }
-    .your-role-right{
+    .your-role-right {
         display: none;
     }
-    .your-role-join-the-team-button{
+
+    .your-role-join-the-team-button {
         display: none;
     }
 }
 
 @media (min-width:769px) and (max-width: 1024px ) {
-    .your-role-header{
+    .your-role-header {
         font-size: 26px;
         margin-bottom: 15px;
         margin-left: 15px;
         text-align: center;
     }
-    .your-role-text{
+
+    .your-role-text {
         text-align: center;
         padding: 1rem 1rem;
         font-size: 16px;
         line-height: 20px;
     }
 
-    .your-role-register-text{
+    .your-role-register-text {
         text-align: center;
         margin-top: 0.5rem;
         font-size: 14px;
     }
-    .your-role-right{
+
+    .your-role-right {
         display: none;
     }
-    .your-role-join-the-team-button{
+
+    .your-role-join-the-team-button {
         display: none;
     }
 }
 
 @media (min-width:1025px) and (max-width: 1200px ) {
-    .your-role-header{
+    .your-role-header {
         font-size: 45px;
         margin-bottom: 15px;
         margin-left: 15px;
         text-align: center;
     }
-    .your-role-text{
+
+    .your-role-text {
         text-align: center;
         padding: 1rem 1rem;
         font-size: 18px;
         line-height: 20px;
     }
 
-    .your-role-register-text{
+    .your-role-register-text {
         text-align: center;
         margin-top: 0.5rem;
         font-size: 18px;
     }
-    .your-role-right{
+
+    .your-role-right {
         display: none;
     }
-    .your-role-join-the-team-button{
+
+    .your-role-join-the-team-button {
         display: none;
     }
 }
 
 @media (min-width:1201px) and (max-width: 1440px) {
-
     .your-role {
         display: flex;
         justify-content: space-evenly;
@@ -1038,23 +1045,25 @@
         flex-wrap: wrap;
     }
 
-    .your-role-header{
+    .your-role-header {
         font-size: 45px;
         margin-bottom: 15px;
         margin-left: 15px;
         text-align: left;
     }
-    .your-role-text{
+
+    .your-role-text {
         text-align: left;
-        padding: 0rem 0 0rem 0;
+        padding: 0 0 0 0;
         font-size: 18px;
         line-height: 25px;
     }
-    .img-header{
+
+    .img-header {
         font-size: 2rem;
     }
 
-    .your-role-register-text{
+    .your-role-register-text {
         text-align: left;
         margin-top: 0.5rem;
         font-size: 18px;
@@ -1074,8 +1083,7 @@
     }
 }
 
-
-.your-role-right img{
+.your-role-right img {
     width: 100%;
     height: 100%;
 }
@@ -1110,7 +1118,6 @@
 
 #fullName,
 #email,
-
 #cohort,
 #ancestorOrNative,
 #employmentStatus,
@@ -1135,15 +1142,15 @@
     transition: background-color 0.3s ease;
 }
 
-input::placeholder{
+input::placeholder {
     color: lightgrey;
 }
 
-select > option{
+select > option {
     color: grey;
 }
 
-.phone-stack{
+.phone-stack {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1151,7 +1158,7 @@ select > option{
     margin-bottom: 2rem;
 }
 
-.phone{
+.phone {
     display: flex;
     align-items: center;
     border: 1px solid lightgrey;
@@ -1161,7 +1168,7 @@ select > option{
     border-radius: 5px;
 }
 
-#stack{
+#stack {
     width: 730px;
     height: 50px;
     border-radius: 5px;
@@ -1202,7 +1209,6 @@ select > option{
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
-
 @media (min-width: 280px) and (max-width: 360px ) {
     .join-the-team-header {
         text-align: center;
@@ -1211,6 +1217,7 @@ select > option{
         line-height: 7px;
         margin-bottom: 20px;
     }
+
     .join-the-team {
         padding: 0 0.2rem;
     }
@@ -1228,18 +1235,19 @@ select > option{
         font-size: 14px;
     }
 
-    .phone-stack{
+    .phone-stack {
         display: flex;
         flex-wrap: wrap;
         width: 23rem;
         margin-bottom: 2rem;
     }
-    .phone{
+
+    .phone {
         margin-left: 1.5rem;
         border: none;
     }
 
-    #stack{
+    #stack {
         display: flex;
         width: 310px;
         height: 40px;
@@ -1250,16 +1258,14 @@ select > option{
         padding-left: 0.5rem;
     }
 
-    .join-the-team-submit-button{
+    .join-the-team-submit-button {
         width: 140px;
         height: 48px;
         font-size: 1.2rem;
         text-align: center;
         margin-left: -2rem;
     }
-
 }
-
 
 @media (min-width: 361px) and (max-width: 411px ) {
     .join-the-team-header {
@@ -1283,19 +1289,19 @@ select > option{
         box-shadow: 0 4px 4px 0 #00000040;
     }
 
-    .phone-stack{
+    .phone-stack {
         display: flex;
         flex-wrap: wrap;
         width: 23rem;
         margin-bottom: 2rem;
     }
 
-    .phone{
+    .phone {
         margin-left: 0.9rem;
         border: none;
     }
 
-    #stack{
+    #stack {
         display: flex;
         width: 300px;
         height: 40px;
@@ -1319,7 +1325,7 @@ select > option{
         font-size: 14px;
     }
 
-    .join-the-team-submit-button{
+    .join-the-team-submit-button {
         width: 140px;
         height: 48px;
         font-size: 1.2rem;
@@ -1327,7 +1333,6 @@ select > option{
         margin-left: -2rem;
     }
 }
-
 
 @media (min-width: 412px) and (max-width: 420px ) {
     .join-the-team-header {
@@ -1351,19 +1356,19 @@ select > option{
         box-shadow: 0 4px 4px 0 #00000040;
     }
 
-    .phone-stack{
+    .phone-stack {
         display: flex;
         flex-wrap: wrap;
         width: 23rem;
         margin-bottom: 2rem;
     }
 
-    .phone{
+    .phone {
         margin-left: 0.2rem;
         border: none;
     }
 
-    #stack{
+    #stack {
         display: flex;
         width: 300px;
         height: 40px;
@@ -1387,7 +1392,7 @@ select > option{
         font-size: 14px;
     }
 
-    .join-the-team-submit-button{
+    .join-the-team-submit-button {
         width: 140px;
         height: 48px;
         font-size: 1.2rem;
@@ -1418,19 +1423,19 @@ select > option{
         box-shadow: 0 4px 4px 0 #00000040;
     }
 
-    .phone-stack{
+    .phone-stack {
         display: flex;
         flex-wrap: wrap;
         width: 23rem;
         margin-bottom: 2rem;
     }
 
-    .phone{
+    .phone {
         margin-left: 0.2rem;
         border: none;
     }
 
-    #stack{
+    #stack {
         display: flex;
         width: 300px;
         height: 40px;
@@ -1454,7 +1459,7 @@ select > option{
         font-size: 14px;
     }
 
-    .join-the-team-submit-button{
+    .join-the-team-submit-button {
         width: 140px;
         height: 48px;
         font-size: 1.2rem;
@@ -1467,28 +1472,30 @@ select > option{
     .join-the-team-header {
         font-size: 28px;
     }
+
     .join-the-team {
         padding: 0 5rem;
     }
-    .registration-form{
+
+    .registration-form {
         padding: 5rem;
         margin: 1rem
     }
 
-    .phone{
+    .phone {
         margin-bottom: 1rem;
         margin-left: 2.1rem;
         border: none;
     }
 
-    .phone-stack{
+    .phone-stack {
         display: flex;
         flex-wrap: wrap;
         width: 23rem;
         margin-bottom: 2rem;
     }
 
-    #stack{
+    #stack {
         display: flex;
         width: 300px;
         height: 40px;
@@ -1512,7 +1519,7 @@ select > option{
         font-size: 14px;
     }
 
-    .join-the-team-submit-button{
+    .join-the-team-submit-button {
         width: 140px;
         height: 48px;
         font-size: 1.2rem;
@@ -1525,49 +1532,53 @@ select > option{
     .join-the-team {
         padding: 0 10rem;
     }
+
     .join-the-team-header {
         font-size: 28px;
     }
-    .registration-form{
+
+    .registration-form {
         padding: 5rem 15rem;
         margin-left: -3rem;
     }
 
-    .phone{
+    .phone {
         margin-bottom: 2rem;
     }
 
-    .phone-stack{
+    .phone-stack {
         display: flex;
         flex-wrap: wrap;
         width: 23rem;
         margin-bottom: 2rem;
     }
-    .join-the-team-submit-button{
+
+    .join-the-team-submit-button {
         width: 140px;
         height: 48px;
-        font-size: 1.2rem;
         text-align: center;
         margin-left: 1rem;
+        font-size: 1.2rem;
     }
 }
 
 @media (min-width:1025px) and (max-width: 1360px ) {
-    .registration-form{
+    .registration-form {
         padding: 5rem 15rem;
     }
 
-    .phone{
+    .phone {
         margin-bottom: 2rem;
     }
 
-    .phone-stack{
+    .phone-stack {
         display: flex;
         flex-wrap: wrap;
         width: 23rem;
         margin-bottom: 2rem;
     }
-    .join-the-team-submit-button{
+
+    .join-the-team-submit-button {
         width: 140px;
         height: 48px;
         font-size: 1.2rem;
@@ -1576,7 +1587,7 @@ select > option{
     }
 }
 
-footer{
+footer {
     background-color: #ff2e2e;
     display: flex;
     justify-content: space-between;
@@ -1585,43 +1596,43 @@ footer{
     padding: 2rem 8rem 2rem 8rem;
 }
 
-.child-right{
+.child-right {
     align-self: flex-end;
 }
 
-.business{
+.business {
     color: white;
     margin: 0.5rem;
 }
 
-div p{
+div p {
     padding: 1rem 0;
 }
 
-.elipses{
+.elipses {
     color: white;
 }
 
 @media (min-width: 320px) and (max-width: 480px ) {
-    footer{
-        justify-content:flex-start;
+    footer {
+        justify-content: flex-start;
         padding: 10rem 4rem 10rem 0.5rem;
     }
-    footer div{
+
+    footer div {
         margin-bottom: 2rem;
     }
 }
 
 @media (min-width: 481px) and (max-width: 768px ) {
-    footer div{
+    footer div {
         margin-bottom: 2rem;
     }
 }
 
 @media (min-width: 769px) and (max-width: 1024px ) {
-    footer div{
+    footer div {
         margin-bottom: 2rem;
         margin-right: 1rem;
     }
 }
-
