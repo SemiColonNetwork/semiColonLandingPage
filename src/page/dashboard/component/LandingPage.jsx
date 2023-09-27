@@ -18,7 +18,6 @@ function LandingPage() {
     const [ancestorOrNative, setAncestorOrNative] = useState('');
     const [employmentStatus, setEmploymentStatus] = useState('');
     const [proficientLanguages, setProficientLanguages] = useState('');
-    const [submitted, setSubmitted] = useState(false);
     const [allFieldsFilled, setAllFieldsFilled] = useState(false);
 
     useEffect(() => {
@@ -73,6 +72,8 @@ function LandingPage() {
             proficientLanguages
         };
 
+        console.log(data)
+
         axios.post("https://semicolonnetwork.onrender.com/join", data)
             .then(response => {
                 console.log('Response:', response);
@@ -85,8 +86,6 @@ function LandingPage() {
             .catch(error => {
                 console.log("An error occurred:", error);
             });
-
-        setSubmitted(true);
     };
 
     const scrollToSection = (id) => {
@@ -159,9 +158,7 @@ function LandingPage() {
             </div>
             <div className="join-the-team" id="join-the-team-section">
                 <h2 className="join-the-team-header">Join the team</h2>
-                <form className="registration-form" onSubmit={(event) => {
-                    handleSubmit(event);
-                    }}>
+                <form className="registration-form" onSubmit={handleSubmit}>
                     <div>
                         <input placeholder="Full Name                                                     👤" type="text" id="fullName" value={fullName} onChange={handleFullNameChange} autoComplete="new-password"/>
                         <input placeholder="Email Address                                               ✉" type="email" id="email" value={email} onChange={handleEmailChange} autoComplete="new-password"/>
@@ -194,13 +191,7 @@ function LandingPage() {
                             <option value="Unemployed">Unemployed</option>
                         </select>
                     </div>
-                    {submitted ? (
-                        <button className="join-the-team-submit-button" disabled style={{ backgroundColor: 'lightgreen', fontSize: '20px', width: '300px', height: '100px', padding: '20px 20px 20px 20px' }}>
-                            Thank you, we will get back to you shortly!
-                        </button>
-                    ) : (
-                        <button className="join-the-team-submit-button" type="submit" disabled={!allFieldsFilled}>Submit</button>
-                    )}
+                    <button className="join-the-team-submit-button" type="submit">Submit</button>
                 </form>
             </div>
             <footer>
