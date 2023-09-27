@@ -60,6 +60,17 @@ function LandingPage() {
         setProficientLanguages(event.target.value);
     };
 
+    const resetFormFields = () => {
+        setFullName('');
+        setEmail('');
+        setPhoneNumber('');
+        setStack('');
+        setCohort('');
+        setAncestorOrNative('');
+        setEmploymentStatus('');
+        setProficientLanguages('');
+    };
+
     const handleSubmit = (event) => {
         event.preventDefault();
 
@@ -79,15 +90,16 @@ function LandingPage() {
                 console.log('Response:', response);
                 if (response.status === 201) {
                     toast.success("Registration successful: " + response.data);
+                    resetFormFields();
                 }
             })
             .catch(error => {
                 if (error.response) {
                     toast.error("Registration failed: " + error.response.data);
                 } else if (error.request) {
-                    console.log("No response received:", error.request);
+                    console.log("No response received: ", error.request);
                 } else {
-                    console.log("Error setting up the request:", error.message);
+                    console.log("Error setting up the request: ", error.message);
                 }
             });
     }
