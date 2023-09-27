@@ -8,6 +8,8 @@ import YourRoleImage from "../../../assets/images/YourRoleImage.svg";
 import SeamlessCommunication from "../../../assets/images/SeamlessCommunication.svg";
 import CollaborationOpportunities from "../../../assets/images/CollaborationOpportunities.svg";
 import PersonalizedExperience from "../../../assets/images/PersonalizedExperience.svg";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function LandingPage() {
     const [fullName, setFullName] = useState('');
@@ -72,21 +74,23 @@ function LandingPage() {
             proficientLanguages
         };
 
-        console.log(data)
-
         axios.post("https://semicolonnetwork.onrender.com/join", data)
             .then(response => {
                 console.log('Response:', response);
                 if (response.status === 201) {
-                    console.log("Registration successful");
-                } else {
-                    console.log("Registration failed");
+                    toast.success("Registration successful: " + response.data);
                 }
             })
             .catch(error => {
-                console.log("An error occurred:", error);
+                if (error.response) {
+                    toast.error("Registration failed: " + error.response.data);
+                } else if (error.request) {
+                    console.log("No response received:", error.request);
+                } else {
+                    console.log("Error setting up the request:", error.message);
+                }
             });
-    };
+    }
 
     const scrollToSection = (id) => {
         const element = document.getElementById(id);
