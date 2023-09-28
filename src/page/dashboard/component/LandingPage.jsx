@@ -21,6 +21,8 @@ function LandingPage() {
     const [employmentStatus, setEmploymentStatus] = useState('');
     const [proficientLanguages, setProficientLanguages] = useState('');
     const [allFieldsFilled, setAllFieldsFilled] = useState(false);
+    const [buttonText, setButtonText] = useState('Submit');
+    const [buttonDisabled, setButtonDisabled] = useState(false);
 
     useEffect(() => {
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -74,6 +76,9 @@ function LandingPage() {
     const handleSubmit = (event) => {
         event.preventDefault();
 
+        setButtonText('Loading...');
+        setButtonDisabled(true);
+
         const data = {
             fullName,
             email,
@@ -87,19 +92,23 @@ function LandingPage() {
 
         axios.post("https://semicolonnetwork.onrender.com/join", data)
             .then(response => {
-                console.log('Response:', response);
                 if (response.status === 201) {
                     toast.success("Registration successful: " + response.data);
                     resetFormFields();
+                    setButtonText('Submitted');
+                    setButtonDisabled(true);
                 }
             })
             .catch(error => {
                 if (error.response) {
                     toast.error("Registration failed: " + error.response.data);
+                    setButtonText('Submit');
                 } else if (error.request) {
                     console.log("No response received: ", error.request);
+                    setButtonText('Submit');
                 } else {
                     console.log("Error setting up the request: ", error.message);
+                    setButtonText('Submit');
                 }
             });
     }
@@ -207,7 +216,9 @@ function LandingPage() {
                             <option value="Unemployed">Unemployed</option>
                         </select>
                     </div>
-                    <button className="join-the-team-submit-button" type="submit">Submit</button>
+                    <button className="join-the-team-submit-button" type="submit" disabled={buttonDisabled}>
+                        {buttonText}
+                    </button>
                 </form>
             </div>
             <footer>
