@@ -85,7 +85,7 @@ function LandingPage() {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        setButtonText('Loading...');
+        setButtonText('one minute');
         setButtonDisabled(true);
 
         const data = {
