@@ -10,9 +10,6 @@ import CollaborationOpportunities from "../../../assets/images/CollaborationOppo
 import PersonalizedExperience from "../../../assets/images/PersonalizedExperience.svg";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import SemicolonImage1 from "../../../assets/images/semicolon-image1.jpg"
-import SemicolonImage2 from "../../../assets/images/semicolon-image2.jpg"
-import SemicolonImage3 from "../../../assets/images/semicolon-image3.jpg"
 
 function LandingPage() {
     const [fullName, setFullName] = useState('');
@@ -26,12 +23,6 @@ function LandingPage() {
     const [allFieldsFilled, setAllFieldsFilled] = useState(false);
     const [buttonText, setButtonText] = useState('Submit');
     const [buttonDisabled, setButtonDisabled] = useState(false);
-
-    const images = [
-        SemicolonImage1,
-        SemicolonImage2,
-        SemicolonImage3,
-    ];
 
     useEffect(() => {
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
