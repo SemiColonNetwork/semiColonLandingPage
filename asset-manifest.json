@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/SemiColonNetwork/semiColonLandingPage/static/css/main.ed93b93f.css",
+    "main.js": "/SemiColonNetwork/semiColonLandingPage/static/js/main.2bc7b6ef.js",
+    "static/js/787.5f5387a2.chunk.js": "/SemiColonNetwork/semiColonLandingPage/static/js/787.5f5387a2.chunk.js",
+    "static/media/mobile-background.jpg": "/SemiColonNetwork/semiColonLandingPage/static/media/mobile-background.f27f2d4fbe357e6fbc88.jpg",
+    "static/media/YourRoleImage.svg": "/SemiColonNetwork/semiColonLandingPage/static/media/YourRoleImage.614eb85ca97ca2ad47ed7ccfe36638de.svg",
+    "static/media/semicolon-image3.jpg": "/SemiColonNetwork/semiColonLandingPage/static/media/semicolon-image3.a0852b84cc81c2158d5a.jpg",
+    "static/media/logo.svg": "/SemiColonNetwork/semiColonLandingPage/static/media/logo.4112c415ec6fcc89fefd418f11cafa58.svg",
+    "static/media/CollaborationOpportunities.svg": "/SemiColonNetwork/semiColonLandingPage/static/media/CollaborationOpportunities.d2ac829823b2868f27aa0a041880c74b.svg",
+    "static/media/PersonalizedExperience.svg": "/SemiColonNetwork/semiColonLandingPage/static/media/PersonalizedExperience.779f68d20e01eeae49dee3b6f7b02057.svg",
+    "static/media/SeamlessCommunication.svg": "/SemiColonNetwork/semiColonLandingPage/static/media/SeamlessCommunication.9c12421f135354912f84dba85cd735d2.svg",
+    "index.html": "/SemiColonNetwork/semiColonLandingPage/index.html",
+    "main.ed93b93f.css.map": "/SemiColonNetwork/semiColonLandingPage/static/css/main.ed93b93f.css.map",
+    "main.2bc7b6ef.js.map": "/SemiColonNetwork/semiColonLandingPage/static/js/main.2bc7b6ef.js.map",
+    "787.5f5387a2.chunk.js.map": "/SemiColonNetwork/semiColonLandingPage/static/js/787.5f5387a2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed93b93f.css",
+    "static/js/main.2bc7b6ef.js"
+  ]
+}
