@@ -8,9 +8,8 @@ import YourRoleImage from "../../../assets/images/YourRoleImage.svg";
 import SeamlessCommunication from "../../../assets/images/SeamlessCommunication.svg";
 import CollaborationOpportunities from "../../../assets/images/CollaborationOpportunities.svg";
 import PersonalizedExperience from "../../../assets/images/PersonalizedExperience.svg";
-import SemicolonImage1 from "../../../assets/images/semicolon-image1.jpg";
-import SemicolonImage2 from "../../../assets/images/semicolon-image2.jpg";
-import SemicolonImage3 from "../../../assets/images/semicolon-image3.jpg";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function LandingPage() {
     const [fullName, setFullName] = useState('');
@@ -21,15 +20,9 @@ function LandingPage() {
     const [ancestorOrNative, setAncestorOrNative] = useState('');
     const [employmentStatus, setEmploymentStatus] = useState('');
     const [proficientLanguages, setProficientLanguages] = useState('');
-    const [currentImage, setCurrentImage] = useState(0);
-    const [submitted, setSubmitted] = useState(false);
     const [allFieldsFilled, setAllFieldsFilled] = useState(false);
-
-    const images = [
-        SemicolonImage1,
-        SemicolonImage2,
-        SemicolonImage3,
-    ];
+    const [buttonText, setButtonText] = useState('Submit');
+    const [buttonDisabled, setButtonDisabled] = useState(false);
 
     useEffect(() => {
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -69,8 +62,22 @@ function LandingPage() {
         setProficientLanguages(event.target.value);
     };
 
+    const resetFormFields = () => {
+        setFullName('');
+        setEmail('');
+        setPhoneNumber('');
+        setStack('');
+        setCohort('');
+        setAncestorOrNative('');
+        setEmploymentStatus('');
+        setProficientLanguages('');
+    };
+
     const handleSubmit = (event) => {
         event.preventDefault();
+
+        setButtonText('one minute');
+        setButtonDisabled(true);
 
         const data = {
             fullName,
@@ -85,38 +92,37 @@ function LandingPage() {
 
         axios.post("https://semicolonnetwork.onrender.com/join", data)
             .then(response => {
-                console.log('Response:', response);
                 if (response.status === 201) {
-                    console.log("Registration successful");
-                } else {
-                    console.log("Registration failed");
+                    toast.success("Registration successful: " + response.data);
+                    resetFormFields();
+                    setButtonText('Submitted');
+                    setButtonDisabled(true);
                 }
             })
             .catch(error => {
-                console.log("An error occurred:", error);
+                if (error.response) {
+                    toast.error("Registration failed: " + error.response.data);
+                    setButtonText('Submit');
+                } else if (error.request) {
+                    console.log("No response received: ", error.request);
+                    setButtonText('Submit');
+                } else {
+                    console.log("Error setting up the request: ", error.message);
+                    setButtonText('Submit');
+                }
             });
-
-        setSubmitted(true);
-    };
+    }
 
     const scrollToSection = (id) => {
         const element = document.getElementById(id);
         element.scrollIntoView({ behavior: 'smooth' });
     };
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentImage((previousImage) => (previousImage + 1) % 3);
-        }, 3000);
-        return () => clearInterval(interval);
-    }, []);
-
     return (
         <div className="semicolon-network-landing-page">
             <header className="header">
                 <div className="header-left">
                     <img src={logo} alt="Logo" className="semicolon" width="100" height="60"/>
-                    {/* <h1 className="semicolon-name">semicolon</h1> */}
                 </div>
                 <div className="header-right">
                     <button className="vision-button" onClick={() => scrollToSection('vision-section')}>Vision</button>
@@ -138,11 +144,7 @@ function LandingPage() {
                         <button className="join-the-team-community-button" onClick={() => scrollToSection('join-the-team-section')}>Join the team</button>
                     </div>
                 </div>
-                <div className="image-scroll-container" >
-                    {/* {images.map((image, index) => (
-                        <img key={index} src={image} alt={`Semicolon ${index + 1}`} style={{width: '100%', display: index === currentImage ? 'block' : 'none'}}/>
-                    ))} */}
-                </div>
+                <div className="image-scroll-container" ></div>
             </div>
             <div className="what-we-envision" id="vision-section">
                 <h2 className="what-we-envision-header">What We Envision</h2>
@@ -183,9 +185,7 @@ function LandingPage() {
             </div>
             <div className="join-the-team" id="join-the-team-section">
                 <h2 className="join-the-team-header">Join the team</h2>
-                <form className="registration-form" onSubmit={(event) => {
-                    handleSubmit(event);
-                    }}>
+                <form className="registration-form" onSubmit={handleSubmit}>
                     <div>
                         <input placeholder="Full Name                                                     👤" type="text" id="fullName" value={fullName} onChange={handleFullNameChange} autoComplete="new-password"/>
                         <input placeholder="Email Address                                               ✉" type="email" id="email" value={email} onChange={handleEmailChange} autoComplete="new-password"/>
@@ -218,47 +218,23 @@ function LandingPage() {
                             <option value="Unemployed">Unemployed</option>
                         </select>
                     </div>
-                    {submitted ? (
-                        <button className="join-the-team-submit-button" disabled style={{ backgroundColor: 'lightgreen', fontSize: '20px', width: '300px', height: '100px', padding: '20px 20px 20px 20px' }}>
-                            Thank you, we will get back to you shortly!
-                        </button>
-                    ) : (
-                        <button className="join-the-team-submit-button" type="submit" disabled={!allFieldsFilled}>Submit</button>
-                    )}
+                    <button className="join-the-team-submit-button" type="submit" disabled={buttonDisabled}>
+                        {buttonText}
+                    </button>
                 </form>
             </div>
-
             <footer>
                 <div>
                     <h3 className='business'> The Team</h3>
-                    <p className='business'>Our Vision
-                    </p>
+                    <p className='business'>Our Vision</p>
                     <p className='business'>Why It Matters</p>
                     <p className='business'> Your Role</p>
                 </div>
-
                 <div className='child-right'>
                     <h3 className='elipses'>
                         ...built by ancestors and natives, for ancestors and natives
                     </h3>
                 </div>
-                {/* <div>
-                    <h3 className='business'> For Individuals</h3>
-                    <p className='business'>Techpreneurship Program</p>
-                    <p className='business'>Data Analytics Program</p>
-                </div>
-                <div>
-                    <h3 className='business'> About Us</h3>
-                    <p className='business'>Careers</p>
-                    <p className='business'>Reports</p>
-                    <p className='business'> Blog</p>
-                </div>
-                <div>
-                <h3 className='business'> Contact Us</h3>
-                    <p className='business'>312, Herbert Macaulay Way, Sabo Yaba, Lagos.</p>
-                    <p className='business'>+234 906 000 8609</p>
-                    <p className='business'> info@semicolon.africa</p>
-                </div> */}
             </footer>
         </div>
     );
