@@ -127,14 +127,16 @@ function LandingPage() {
             </header>
             <div className="semicolon-community">
                 <div className="hero-section">
-                    <h1 className="community-header">Building a vibrant <br/> Community Hub</h1>
-                    <p className="community-text">
-                        Join us on this journey to build a platform that empowers our community,
-                        foster meaningful connections, and redefines how we engage and collaborate.
-                        Together, we will shape the future of our community's digital presence.
-                    </p>
-                    <p className="community-text content">...built by ancestors and natives, for ancestors and natives</p>
-                    <button className="join-the-team-community-button" onClick={() => scrollToSection('join-the-team-section')}>Join the team</button>
+                    <div className='hero-container'>
+                        <h1 className="community-header">Building a Vibrant Community Hub</h1>
+                        <p className="community-text">
+                            Join us on this journey to build a platform that empowers our community,
+                            foster meaningful connections, and redefines how we engage and collaborate.
+                            Together, we will shape the future of our community's digital presence.
+                        </p>
+                        <p className="community-text content">...built by ancestors and natives, for ancestors and natives</p>
+                        <button className="join-the-team-community-button" onClick={() => scrollToSection('join-the-team-section')}>Join the team</button>
+                    </div>
                 </div>
                 <div className="image-scroll-container" >
                     {/* {images.map((image, index) => (
