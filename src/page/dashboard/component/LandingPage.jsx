@@ -77,7 +77,7 @@ function LandingPage() {
     };
 
     const validatePhoneNumber = (phoneNumber) => {
-        return phoneNumber.length === 10;
+        return phoneNumber.length === 13;
     };
 
     const validateStack = (stack) => {
