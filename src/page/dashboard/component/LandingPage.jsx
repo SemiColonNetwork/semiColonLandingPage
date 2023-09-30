@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState } from 'react';
 import "../style/LandingPage.css";
 import axios from 'axios';
 import PhoneInput from 'react-phone-input-2';
@@ -20,15 +20,8 @@ function LandingPage() {
     const [ancestorOrNative, setAncestorOrNative] = useState('');
     const [employmentStatus, setEmploymentStatus] = useState('');
     const [proficientLanguages, setProficientLanguages] = useState('');
-    const [allFieldsFilled, setAllFieldsFilled] = useState(false);
     const [buttonText, setButtonText] = useState('Submit');
     const [buttonDisabled, setButtonDisabled] = useState(false);
-
-    useEffect(() => {
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        const areAllFieldsFilled = !!fullName && !!email && !emailPattern.test(email) && !!phoneNumber && !!stack && cohort !== '0' && !!ancestorOrNative && !!employmentStatus && !!proficientLanguages;
-        setAllFieldsFilled(areAllFieldsFilled);
-    }, [fullName, email, phoneNumber, stack, cohort, ancestorOrNative, employmentStatus, proficientLanguages]);
 
     const handleFullNameChange = (event) => {
         setFullName(event.target.value);
@@ -73,10 +66,84 @@ function LandingPage() {
         setProficientLanguages('');
     };
 
+    const validateFullName = (fullName) => {
+        const regex = /^[a-zA-Z\s]+$/;
+        return regex.test(fullName);
+    };
+
+    const validateEmail = (email) => {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+    };
+
+    const validatePhoneNumber = (phoneNumber) => {
+        return phoneNumber.length === 10;
+    };
+
+    const validateStack = (stack) => {
+        return stack !== "";
+    };
+
+    const validateCohort = (cohort) => {
+        return parseFloat(cohort) >= 1;
+    };
+
+    const validateProficientLanguages = (proficientLanguages) => {
+        return proficientLanguages !== "";
+    };
+
+    const validateAncestorOrNative = (ancestorOrNative) => {
+        return ancestorOrNative !== "";
+    };
+
+    const validateEmploymentStatus = (employmentStatus) => {
+        return employmentStatus !== "";
+    };
+
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        setButtonText('one minute');
+        if (!validateFullName(fullName)) {
+            toast.error("Please enter a valid full name");
+            return;
+        }
+
+        if (!validateEmail(email)) {
+            toast.error("Please enter a valid email address");
+            return;
+        }
+
+        if (!validatePhoneNumber(phoneNumber)) {
+            toast.error("Please enter a valid phone number");
+            return;
+        }
+
+        if (!validateStack(stack)) {
+            toast.error("Please select a stack");
+            return;
+        }
+
+        if (!validateCohort(cohort)) {
+            toast.error("Please select a valid cohort");
+            return;
+        }
+
+        if (!validateProficientLanguages(proficientLanguages)) {
+            toast.error("Please enter proficient language(s)");
+            return;
+        }
+
+        if (!validateAncestorOrNative(ancestorOrNative)) {
+            toast.error("Please select Ancestor or Native");
+            return;
+        }
+
+        if (!validateEmploymentStatus(employmentStatus)) {
+            toast.error("Please select an employment status");
+            return;
+        }
+
+        setButtonText('Loading...');
         setButtonDisabled(true);
 
         const data = {
@@ -133,16 +200,14 @@ function LandingPage() {
             </header>
             <div className="semicolon-community">
                 <div className="hero-section">
-                    <div className='hero-container'>
-                        <h1 className="community-header">Building a Vibrant Community Hub</h1>
-                        <p className="community-text">
-                            Join us on this journey to build a platform that empowers our community,
-                            foster meaningful connections, and redefines how we engage and collaborate.
-                            Together, we will shape the future of our community's digital presence.
-                        </p>
-                        <p className="community-text content">...built by ancestors and natives, for ancestors and natives</p>
-                        <button className="join-the-team-community-button" onClick={() => scrollToSection('join-the-team-section')}>Join the team</button>
-                    </div>
+                    <h1 className="community-header">Building a vibrant <br/> Community Hub</h1>
+                    <p className="community-text">
+                        Join us on this journey to build a platform that empowers our community,
+                        foster meaningful connections, and redefines how we engage and collaborate.
+                        Together, we will shape the future of our community's digital presence.
+                    </p>
+                    <p className="community-text content">...built by ancestors and natives, for ancestors and natives</p>
+                    <button className="join-the-team-community-button" onClick={() => scrollToSection('join-the-team-section')}>Join the team</button>
                 </div>
                 <div className="image-scroll-container" ></div>
             </div>
