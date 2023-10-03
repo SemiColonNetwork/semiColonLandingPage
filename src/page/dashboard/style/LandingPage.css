@@ -495,14 +495,14 @@
     }
 
     .content {
-        top: 300px;
+        top: 360px;
         font-size: 11px;
     }
 
     .join-the-team-community-button {
         width: 130px;
         height: 40px;
-        top: 520px;
+        top: 550px;
         left: 140px;
         font-size: 12px;
         text-align: center;
@@ -1822,7 +1822,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 2rem 8rem 2rem 8rem;
+    padding: 5rem 8rem 5rem 8rem;
 }
 
 .child-right {
