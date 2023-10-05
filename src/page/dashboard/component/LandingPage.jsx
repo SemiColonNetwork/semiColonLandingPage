@@ -260,7 +260,7 @@ function LandingPage() {
                             <PhoneInput country={'ng'} value={phoneNumber}  onChange={handlePhoneChange} className="phone-input" />
                         </div>
                         <select id="stack" value={stack} onChange={handleStackChange}>
-                            <option value="">Stack</option>
+                            <option value="" disabled selected hidden>Stack</option>
                             <option value="frontend">Frontend</option>
                             <option value="backend">Backend</option>
                             <option value="devops">DevOps</option>
@@ -273,12 +273,12 @@ function LandingPage() {
                     </div>
                     <div>
                         <select id="ancestorOrNative" value={ancestorOrNative} onChange={handleAncestorOrNativeChange}>
-                            <option value="">Ancestor or Native</option>
+                            <option value="" disabled selected hidden>Ancestor or Native</option>
                             <option value="ancestor">Ancestor</option>
                             <option value="native">Native</option>
                         </select>
                         <select id="employmentStatus" value={employmentStatus} onChange={handleEmploymentStatusChange}>
-                            <option value="">Employment Status</option>
+                            <option value="" disabled selected hidden>Employment Status</option>
                             <option value="Employed">Employed</option>
                             <option value="Unemployed">Unemployed</option>
                         </select>
