@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/semiColonLandingPage/static/css/main.8a0fbced.css",
+    "main.css": "/semiColonLandingPage/static/css/main.ca4b595e.css",
     "main.js": "/semiColonLandingPage/static/js/main.c60e2bcc.js",
     "static/js/787.5f5387a2.chunk.js": "/semiColonLandingPage/static/js/787.5f5387a2.chunk.js",
     "static/media/mobile-background.jpg": "/semiColonLandingPage/static/media/mobile-background.f27f2d4fbe357e6fbc88.jpg",
@@ -11,12 +11,12 @@
     "static/media/PersonalizedExperience.svg": "/semiColonLandingPage/static/media/PersonalizedExperience.779f68d20e01eeae49dee3b6f7b02057.svg",
     "static/media/SeamlessCommunication.svg": "/semiColonLandingPage/static/media/SeamlessCommunication.9c12421f135354912f84dba85cd735d2.svg",
     "index.html": "/semiColonLandingPage/index.html",
-    "main.8a0fbced.css.map": "/semiColonLandingPage/static/css/main.8a0fbced.css.map",
+    "main.ca4b595e.css.map": "/semiColonLandingPage/static/css/main.ca4b595e.css.map",
     "main.c60e2bcc.js.map": "/semiColonLandingPage/static/js/main.c60e2bcc.js.map",
     "787.5f5387a2.chunk.js.map": "/semiColonLandingPage/static/js/787.5f5387a2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a0fbced.css",
+    "static/css/main.ca4b595e.css",
     "static/js/main.c60e2bcc.js"
   ]
 }
