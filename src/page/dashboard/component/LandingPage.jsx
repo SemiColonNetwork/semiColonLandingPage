@@ -273,12 +273,12 @@ function LandingPage() {
                     </div>
                     <div>
                         <select id="ancestorOrNative" value={ancestorOrNative} onChange={handleAncestorOrNativeChange}>
-                            <option value="">Ancestor or Native</option>
+                            <option value="" disabled selected hidden>Ancestor or Native</option>
                             <option value="ancestor">Ancestor</option>
                             <option value="native">Native</option>
                         </select>
                         <select id="employmentStatus" value={employmentStatus} onChange={handleEmploymentStatusChange}>
-                            <option value="">Employment Status</option>
+                            <option value="" disabled selected hidden>Employment Status</option>
                             <option value="Employed">Employed</option>
                             <option value="Unemployed">Unemployed</option>
                         </select>
