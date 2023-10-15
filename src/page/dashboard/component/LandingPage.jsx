@@ -260,7 +260,7 @@ function LandingPage() {
                             <PhoneInput country={'ng'} value={phoneNumber}  onChange={handlePhoneChange} className="phone-input" />
                         </div>
                         <select id="stack" value={stack} onChange={handleStackChange}>
-                            <option value="">Stack</option>
+                            <option value="" disabled selected hidden>Stack</option>
                             <option value="frontend">Frontend</option>
                             <option value="backend">Backend</option>
                             <option value="devops">DevOps</option>
