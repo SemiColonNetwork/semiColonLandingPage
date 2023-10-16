@@ -1,6 +1,6 @@
 {
-  "name": "semicolonnetworkfrontend",
-  "homepage": "https://SemiColonNetwork.github.io/semiColonLandingPage",
+  "name": "Semicolon | TownHall",
+  "homepage": "https://community.semicolon.africa",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

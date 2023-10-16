@@ -1,60 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="/public/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Building a vibrant community hub"
-    />
-    <link rel="semicolon africa" href="%PUBLIC_URL%/logo.svg" />
+<head>
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window,document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1661400400715058');
+    fbq('track', 'PageView');
+    fbq('track', 'CompleteRegistration');
+    fbq('track', 'SubmitApplication');
+  </script>
+  <noscript>
+    <img height="1" width="1"
+         src="https://www.facebook.com/tr?id=1661400400715058&ev=PageView
+&noscript=1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico?fav=fav" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png?fav=fav">
+  <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png?fav=fav">
+  <link rel="icon" type="image/png" sizes="194x194" href="%PUBLIC_URL%/favicon-194x194.png?fav=fav">
+  <link rel="icon" type="image/png" sizes="192x192" href="%PUBLIC_URL%/android-chrome-192x192.png?fav=fav">
+  <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png?fav=fav">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json?fav=fav">
+  <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg?fav=fav" color="#5bbad5">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico?fav=fav">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="%PUBLIC_URL%/mstile-144x144.png?fav=fav">
+  <meta name="msapplication-TileImage70" content="%PUBLIC_URL%/mstile-70x70.png?fav=fav">
+  <meta name="msapplication-TileImage150" content="%PUBLIC_URL%/mstile-150x150.png?fav=fav">
+  <meta name="msapplication-TileImage310" content="%PUBLIC_URL%/mstile-310x310.png?fav=fav">
+  <meta name="msapplication-TileImage310150" content="%PUBLIC_URL%/mstile-310x150.png?fav=fav">
+  <meta name="theme-color" content="#ffffff">
 
 
 
-
-<!-- 
-    <meta property="og:title" content="Semicolon Africa" />
-    <meta property="og:description" content="Building a vibrant community hub" />
-    <meta property="og:image" content="%PUBLIC_URL%/og-logo.svg" /> 
-    <meta property="og:url" content="https://semicolonnetwork.github.io/semiColonLandingPage/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="en_US" />
-
-
- -->
-
-
-
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Semicolon Network</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta
+          name="Semicolon | TownHall"
+          content="Semicolon Community"
+  />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/f26f48bdb1.js" crossorigin="anonymous"></script>
+<!--  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />-->
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet"/>
+  <link href="index.css" />
+  <!--
+    manifest.json provides metadata used when your web app is installed on a
+    user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+  -->
+<!--  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />-->
+  <!--
+    Notice the use of %PUBLIC_URL% in the tags above.
+    It will be replaced with the URL of the `public` folder during the build.
+    Only files inside the `public` folder can be referenced from the HTML.
+    Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+    work correctly both with client-side routing and a non-root public URL.
+    Learn how to configure a non-root public URL by running `npm run build`.
+  -->
+  <title>Semicolon | TownHall </title>
+</head>
+<body style="margin:0;padding: 0" class="bg-light">
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+<!--
+  This HTML file is a template.
+  If you open it directly in the browser, you will see an empty page.
+  You can add webfonts, meta tags, or analytics to this file.
+  The build step will place the bundled scripts into the <body> tag.
+  To begin the development, run `npm start` or `yarn start`.
+  To create a production bundle, use `npm run build` or `yarn build`.
+-->
+</body>
 </html>
