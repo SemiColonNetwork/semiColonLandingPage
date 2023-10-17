@@ -1438,7 +1438,7 @@ select > option {
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
-@media (min-width: 280px) and (max-width: 360px ) {
+@media (min-width: 270px) and (max-width: 280px ) {
     .join-the-team-header {
         text-align: center;
         margin-top: 50px;
@@ -1458,8 +1458,8 @@ select > option {
     #employmentStatus,
     #proficientLanguages {
         flex: 1;
-        margin-left: 15px;
-        width: 300px;
+        margin-left: 10px;
+        width: 250px;
         height: 40px;
         font-size: 14px;
     }
@@ -1467,7 +1467,65 @@ select > option {
     .phone-stack {
         display: flex;
         flex-wrap: wrap;
-        width: 23rem;
+        width: 19.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .phone {
+        margin-left: 1.9rem;
+        border: none;
+    }
+
+    #stack {
+        display: flex;
+        width: 380px;
+        height: 40px;
+        border-radius: 5px;
+        margin-top: 2rem;
+        margin-right: 1.8rem;
+        margin-left: 1.8rem;
+        padding-left: 0.5rem;
+    }
+
+    .join-the-team-submit-button {
+        width: 100px;
+        height: 38px;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-left: 0.8rem;
+    }
+}
+
+@media (min-width: 281px) and (max-width: 320px ) {
+    .join-the-team-header {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 18px;
+        line-height: 7px;
+        margin-bottom: 20px;
+    }
+
+    .join-the-team {
+        padding: 0 0.2rem;
+    }
+
+    #fullName,
+    #email,
+    #cohort,
+    #ancestorOrNative,
+    #employmentStatus,
+    #proficientLanguages {
+        flex: 1;
+        margin-left: 10px;
+        width: 290px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .phone-stack {
+        display: flex;
+        flex-wrap: wrap;
+        width: 22rem;
         margin-bottom: 2rem;
     }
 
@@ -1478,12 +1536,12 @@ select > option {
 
     #stack {
         display: flex;
-        width: 310px;
+        width: 380px;
         height: 40px;
         border-radius: 5px;
         margin-top: 2rem;
-        margin-right: 2.7rem;
-        margin-left: 2rem;
+        margin-right: 1.8rem;
+        margin-left: 1.8rem;
         padding-left: 0.5rem;
     }
 
@@ -1496,7 +1554,73 @@ select > option {
     }
 }
 
-@media (min-width: 361px) and (max-width: 411px ) {
+@media (min-width: 321px) and (max-width: 375px ) {
+    .join-the-team-header {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 18px;
+        line-height: 7px;
+        margin-bottom: 20px;
+    }
+
+    .join-the-team {
+        padding: 0 0.2rem;
+    }
+
+    #fullName,
+    #email,
+    #cohort,
+    #ancestorOrNative,
+   
+    #proficientLanguages {
+        flex: 1;
+        margin-left: 30px;
+        width: 300px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .phone-stack {
+        display: flex;
+        flex-wrap: wrap;
+        width: 22rem;
+        margin-bottom: 2rem;
+    }
+
+    .phone {
+        margin-left: 1.8rem;
+        border: none;
+    }
+
+    #stack {
+        display: flex;
+        width: 380px;
+        height: 40px;
+        border-radius: 5px;
+        margin-top: 2rem;
+        margin-right: 1.4rem;
+        margin-left: 1.8rem;
+        padding-left: 0.5rem;
+    }
+
+    #employmentStatus{
+        flex: 1;
+        margin-left: 20px;
+        width: 300px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .join-the-team-submit-button {
+        width: 140px;
+        height: 48px;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-left: 1rem;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 411px ) {
     .join-the-team-header {
         text-align: center;
         margin-top: 50px;
@@ -1526,7 +1650,7 @@ select > option {
     }
 
     .phone {
-        margin-left: 0.9rem;
+        margin-left: -0.2rem;
         border: none;
     }
 
@@ -1537,7 +1661,7 @@ select > option {
         border-radius: 5px;
         margin-top: 2rem;
         margin-right: 1.9rem;
-        margin-left: 0.9rem;
+        margin-left: -0.2rem;
         padding-left: 0.5rem;
     }
 
@@ -1545,13 +1669,18 @@ select > option {
     #email,
     #cohort,
     #ancestorOrNative,
-    #employmentStatus,
     #proficientLanguages {
         flex: 1;
-        margin-left: -15px;
+        margin-left: -30px;
         width: 300px;
         height: 40px;
         font-size: 14px;
+    }
+
+    #employmentStatus{
+        margin-left: -65px;
+        width: 300px;
+        height: 40px;
     }
 
     .join-the-team-submit-button {
@@ -1559,7 +1688,7 @@ select > option {
         height: 48px;
         font-size: 1.2rem;
         text-align: center;
-        margin-left: -2rem;
+        margin-left: -4rem;
     }
 }
 
@@ -1593,7 +1722,7 @@ select > option {
     }
 
     .phone {
-        margin-left: 0.2rem;
+        margin-left: 0.5rem;
         border: none;
     }
 
@@ -1604,7 +1733,7 @@ select > option {
         border-radius: 5px;
         margin-top: 2rem;
         margin-right: 0.7rem;
-        margin-left: 0.2rem;
+        margin-left: 0.5rem;
         padding-left: 0.5rem;
     }
 
@@ -1612,15 +1741,21 @@ select > option {
     #email,
     #cohort,
     #ancestorOrNative,
-    #employmentStatus,
+    
     #proficientLanguages {
         flex: 1;
-        margin-left: -25px;
+        margin-left: -15px;
         width: 300px;
         height: 40px;
         font-size: 14px;
     }
 
+    #employmentStatus{
+        margin-left: -45px;
+        width: 300px;
+        height: 40px;
+        font-size: 14px;
+    }
     .join-the-team-submit-button {
         width: 140px;
         height: 48px;
@@ -1660,8 +1795,8 @@ select > option {
     }
 
     .phone {
-        margin-left: 0.2rem;
         border: none;
+        margin-left: -0.5rem;
     }
 
     #stack {
@@ -1671,7 +1806,7 @@ select > option {
         border-radius: 5px;
         margin-top: 2rem;
         margin-right: 0.7rem;
-        margin-left: 0.2rem;
+        margin-left: -0.5rem;
         padding-left: 0.5rem;
     }
 
@@ -1679,10 +1814,16 @@ select > option {
     #email,
     #cohort,
     #ancestorOrNative,
-    #employmentStatus,
     #proficientLanguages {
         flex: 1;
-        margin-left: -25px;
+        margin-left: -35px;
+        width: 300px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    #employmentStatus{
+        margin-left: -70px;
         width: 300px;
         height: 40px;
         font-size: 14px;
@@ -1697,23 +1838,23 @@ select > option {
     }
 }
 
-@media (min-width:481px) and (max-width: 767px ) {
+@media (min-width:481px) and (max-width: 499px ) {
     .join-the-team-header {
         font-size: 28px;
     }
 
     .join-the-team {
-        padding: 0 5rem;
+        padding: 0 2rem;
     }
 
     .registration-form {
-        padding: 5rem;
-        margin: 1rem
+    
+        padding: 4rem 2rem;
     }
 
     .phone {
         margin-bottom: 1rem;
-        margin-left: 2.1rem;
+        margin-left: 2.4rem;
         border: none;
     }
 
@@ -1731,7 +1872,7 @@ select > option {
         border-radius: 5px;
         margin-top: 0.5rem;
         margin-right: 0.7rem;
-        margin-left: 2.1rem;
+        margin-left: 2.4rem;
         padding-left: 0.5rem;
     }
 
@@ -1739,9 +1880,83 @@ select > option {
     #email,
     #cohort,
     #ancestorOrNative,
-    #employmentStatus,
+    
     #proficientLanguages {
         flex: 1;
+        margin-left: 30px;
+        width: 300px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    #employmentStatus{
+        margin-left: 15px;
+        width: 300px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .join-the-team-submit-button {
+        width: 140px;
+        height: 48px;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-left: 1rem;
+    }
+}
+
+@media (min-width:500px) and (max-width: 767px ) {
+    .join-the-team-header {
+        font-size: 28px;
+    }
+
+    .join-the-team {
+        padding: 0 2rem;
+    }
+
+    .registration-form {
+    
+        padding: 4rem 2rem;
+    }
+
+    .phone {
+        margin-bottom: 1rem;
+        margin-left: 2.4rem;
+        border: none;
+    }
+
+    .phone-stack {
+        display: flex;
+        flex-wrap: wrap;
+        width: 23rem;
+        margin-bottom: 2rem;
+    }
+
+    #stack {
+        display: flex;
+        width: 300px;
+        height: 40px;
+        border-radius: 5px;
+        margin-top: 0.5rem;
+        margin-right: 0.7rem;
+        margin-left: 2.4rem;
+        padding-left: 0.5rem;
+    }
+
+    #fullName,
+    #email,
+    #cohort,
+    #ancestorOrNative,
+    
+    #proficientLanguages {
+        display: block;
+        margin-left: 15px;
+        width: 300px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    #employmentStatus{
         margin-left: 15px;
         width: 300px;
         height: 40px;
@@ -1781,6 +1996,7 @@ select > option {
         width: 23rem;
         margin-bottom: 2rem;
     }
+    
 
     .join-the-team-submit-button {
         width: 140px;
@@ -1842,7 +2058,7 @@ div p {
     color: white;
 }
 
-@media (min-width: 320px) and (max-width: 480px ) {
+@media (min-width: 280px) and (max-width: 480px ) {
     footer{
         justify-content:flex-start;
         padding: 5rem 4rem 5rem 0.5rem;
