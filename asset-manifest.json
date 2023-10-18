@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.f7c5a12b.css",
-    "main.js": "/static/js/main.9c91bdf1.js",
-    "static/js/787.a3fea8fa.chunk.js": "/static/js/787.a3fea8fa.chunk.js",
-    "static/media/mobile-background.jpg": "/static/media/mobile-background.f27f2d4fbe357e6fbc88.jpg",
-    "static/media/YourRoleImage.svg": "/static/media/YourRoleImage.573dde4ea3ecd3aa64c79d3bfa2954fc.svg",
-    "static/media/semicolon-image3.jpg": "/static/media/semicolon-image3.a0852b84cc81c2158d5a.jpg",
-    "static/media/logo.svg": "/static/media/logo.cfac9d063b15327dce5e54b121501eac.svg",
-    "static/media/CollaborationOpportunities.svg": "/static/media/CollaborationOpportunities.424eb885cf4124c718c48687d63fbc6e.svg",
-    "static/media/PersonalizedExperience.svg": "/static/media/PersonalizedExperience.70eeb4d1851befa93fd4e4343c6885f8.svg",
-    "static/media/SeamlessCommunication.svg": "/static/media/SeamlessCommunication.107c1ee539e60283acd3849d6822f3c3.svg",
-    "index.html": "/index.html",
-    "main.f7c5a12b.css.map": "/static/css/main.f7c5a12b.css.map",
-    "main.9c91bdf1.js.map": "/static/js/main.9c91bdf1.js.map",
-    "787.a3fea8fa.chunk.js.map": "/static/js/787.a3fea8fa.chunk.js.map"
+    "main.css": "/semiColonLandingPage/static/css/main.fb996391.css",
+    "main.js": "/semiColonLandingPage/static/js/main.b821deab.js",
+    "static/js/787.a3fea8fa.chunk.js": "/semiColonLandingPage/static/js/787.a3fea8fa.chunk.js",
+    "static/media/mobile-background.jpg": "/semiColonLandingPage/static/media/mobile-background.f27f2d4fbe357e6fbc88.jpg",
+    "static/media/YourRoleImage.svg": "/semiColonLandingPage/static/media/YourRoleImage.573dde4ea3ecd3aa64c79d3bfa2954fc.svg",
+    "static/media/semicolon-image3.jpg": "/semiColonLandingPage/static/media/semicolon-image3.a0852b84cc81c2158d5a.jpg",
+    "static/media/logo.svg": "/semiColonLandingPage/static/media/logo.cfac9d063b15327dce5e54b121501eac.svg",
+    "static/media/CollaborationOpportunities.svg": "/semiColonLandingPage/static/media/CollaborationOpportunities.424eb885cf4124c718c48687d63fbc6e.svg",
+    "static/media/PersonalizedExperience.svg": "/semiColonLandingPage/static/media/PersonalizedExperience.70eeb4d1851befa93fd4e4343c6885f8.svg",
+    "static/media/SeamlessCommunication.svg": "/semiColonLandingPage/static/media/SeamlessCommunication.107c1ee539e60283acd3849d6822f3c3.svg",
+    "index.html": "/semiColonLandingPage/index.html",
+    "main.fb996391.css.map": "/semiColonLandingPage/static/css/main.fb996391.css.map",
+    "main.b821deab.js.map": "/semiColonLandingPage/static/js/main.b821deab.js.map",
+    "787.a3fea8fa.chunk.js.map": "/semiColonLandingPage/static/js/787.a3fea8fa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7c5a12b.css",
-    "static/js/main.9c91bdf1.js"
+    "static/css/main.fb996391.css",
+    "static/js/main.b821deab.js"
   ]
 }
